@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/furnituredetails",
+      "handler": "furnituredetails.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/furnituredetails/count",
+      "handler": "furnituredetails.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/furnituredetails/:id",
+      "handler": "furnituredetails.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/furnituredetails",
+      "handler": "furnituredetails.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/furnituredetails/:id",
+      "handler": "furnituredetails.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/furnituredetails/:id",
+      "handler": "furnituredetails.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

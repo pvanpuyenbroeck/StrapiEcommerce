@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "furnituredetails",
+  "info": {
+    "name": "furnituredetails",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titel": {
+      "type": "string"
+    },
+    "omschrijving": {
+      "type": "richtext"
+    },
+    "PrijsInEuro": {
+      "type": "decimal"
+    },
+    "Afbeelding": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    }
+  }
+}
